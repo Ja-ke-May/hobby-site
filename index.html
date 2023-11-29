@@ -11,56 +11,41 @@
 <header>
   <nav class="bg-black bg-opacity-80 mb-5">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white-400 hover:bg-white-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
-            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+      <div class="sm:flex justify-between items-center">
+        <!-- Logo section -->
+        <div class="sm:hidden text-center w-full">
+          <h1 class="text-green-800 text-lg font-babas font-extrabold">
+            Only<span class="text-white font-babas font-extrabold">Fish</span>
+          </h1>
         </div>
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex flex-shrink-0 items-center mr-5">
-            <h1 class="text-green-800 font-babas font-extrabold">Only
-              <span class="text-white font-babas font-extrabold ml-[-0.2em]">Fish</span>
-            </h1>            
-          </div>
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-5">
-              <!-- Current: "bg-white-900 text-white", Default: "text-white-300 hover:bg-white-700 hover:text-white" -->
-              <a href="index.html" class="bg-white-900 text-white text-opacity-80 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-              <a href="fishing-related.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Fishing Related</a>  
-              <a href="fish.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Species</a>
-              <a href="about.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">About</a>
-            </div>
-          </div>
+        <!-- Logo section for wide screens -->
+        <div class="hidden sm:flex items-center">
+          <h1 class="text-green-800 text-lg font-babas font-extrabold">
+            Only<span class="text-white font-babas font-extrabold">Fish</span>
+          </h1>
         </div>
+        <!-- Navigation links -->
+        <div class="hidden sm:flex space-x-5">
+          <a href="index.html" class="bg-white-900 text-white text-opacity-80 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+          <a href="fishing-related.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Fishing Related</a>
+          <a href="fish.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Species</a>
+          <a href="about.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">About</a>
+        </div>
+        <!-- Responsive: Navigation links underneath logo on small screens -->
+        <div class="sm:hidden flex items-center justify-center mt-4">
+          <a href="index.html" class="bg-white-900 text-white text-opacity-80 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+          <a href="fishing-related.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Fishing Related</a>
+          <a href="fish.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Species</a>
+          <a href="about.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">About</a>
         </div>
       </div>
     </div>
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
-        <a href="index.html" class="bg-white-900 text-white text-opacity-80 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-        <a href="fishing-related.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Fishing Related</a>
-        <a href="fish.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">Species</a>
-        <a href="about.html" class="text-white text-opacity-80 hover:bg-white-700 hover:text-green-800 rounded-md px-3 py-2 text-sm font-medium">About</a>
-      </div>
-    </div>
-  </nav>
+  </nav>      
 </header>
 <main>
   <!--Gallery section -->
 <section>
-  <h3 class="font-bold text-green-800 font-babas-neue mt-5">Spotlight</h3>
+  <h3 class="font-bold text-green-800 font-babas-neue mt-5 ml-5">Spotlight</h3>
   <div id="gallery" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -68,7 +53,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton" data-dropdown-toggle="dropdownClick" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton" data-dropdown-toggle="dropdownClick" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -80,8 +65,6 @@
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
             </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -90,7 +73,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
        <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton1" data-dropdown-toggle="dropdownClick1" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton1" data-dropdown-toggle="dropdownClick1" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -102,8 +85,6 @@
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
           </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -112,7 +93,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton2" data-dropdown-toggle="dropdownClick2" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton2" data-dropdown-toggle="dropdownClick2" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -123,9 +104,7 @@
             <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-          </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
+          </li> 
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -134,7 +113,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton3" data-dropdown-toggle="dropdownClick3" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton3" data-dropdown-toggle="dropdownClick3" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -146,8 +125,6 @@
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
           </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -156,7 +133,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton4" data-dropdown-toggle="dropdownClick4" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton4" data-dropdown-toggle="dropdownClick4" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -167,8 +144,6 @@
             <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-          </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
           </li>
         </ul>
       </div>
@@ -196,7 +171,7 @@
 </section>
 <!--Gallery section-->
 <section>
-  <h3 class="font-bold text-green-800 font-babas-neue mt-5">Most Recent</h3>
+  <h3 class="font-bold text-green-800 font-babas-neue mt-5 ml-5">Most Recent</h3>
   <div id="gallery1" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -204,7 +179,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton5" data-dropdown-toggle="dropdownClick5" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton5" data-dropdown-toggle="dropdownClick5" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -215,9 +190,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -226,7 +198,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
        <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton6" data-dropdown-toggle="dropdownClick6" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton6" data-dropdown-toggle="dropdownClick6" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -237,9 +209,7 @@
             <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-          </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
+          </li> 
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -248,7 +218,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton7" data-dropdown-toggle="dropdownClick7" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton7" data-dropdown-toggle="dropdownClick7" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -259,9 +229,7 @@
             <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-          </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
+          </li> 
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -270,7 +238,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton8" data-dropdown-toggle="dropdownClick8" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton8" data-dropdown-toggle="dropdownClick8" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -281,9 +249,7 @@
             <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-          </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
+          </li> 
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -292,7 +258,7 @@
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
         <!-- Dropdown menu button -->
         <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-        <button id="dropdownClickButton9" data-dropdown-toggle="dropdownClick9" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <button id="dropdownClickButton9" data-dropdown-toggle="dropdownClick9" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
         </svg>
       </button>
@@ -304,8 +270,7 @@
           </li>
           <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
           </li>
-          <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-          </li>
+          
         </ul>
       </div>
         <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -332,7 +297,7 @@
 </section>
 <!--Gallery section -->
   <section>
-    <h3 class="font-bold text-green-800 font-babas-neue mt-5">Pike</h3>
+    <h3 class="font-bold text-green-800 font-babas-neue mt-5 ml-5">Pike</h3>
     <div id="gallery4" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -340,7 +305,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton10" data-dropdown-toggle="dropdownClick10" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton10" data-dropdown-toggle="dropdownClick10" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
           </button>
@@ -352,8 +317,6 @@
               </li>
               <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
               </li>
-              <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-              </li>
             </ul>
           </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -362,7 +325,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
          <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton11" data-dropdown-toggle="dropdownClick11" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton11" data-dropdown-toggle="dropdownClick11" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -373,9 +336,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -384,7 +344,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton12" data-dropdown-toggle="dropdownClick12" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton12" data-dropdown-toggle="dropdownClick12" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -395,9 +355,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -406,7 +363,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton13" data-dropdown-toggle="dropdownClick13" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton13" data-dropdown-toggle="dropdownClick13" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -417,9 +374,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -428,7 +382,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton14" data-dropdown-toggle="dropdownClick14" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton14" data-dropdown-toggle="dropdownClick14" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -439,9 +393,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -468,7 +419,7 @@
   </section>
 <!--Gallery section -->
   <section>
-    <h3 class="font-bold text-green-800 font-babas-neue mt-5">Other</h3>
+    <h3 class="font-bold text-green-800 font-babas-neue mt-5 ml-5">Other</h3>
     <div id="gallery3" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -476,7 +427,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton20" data-dropdown-toggle="dropdownClick20" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton20" data-dropdown-toggle="dropdownClick20" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
           </button>
@@ -488,8 +439,6 @@
               </li>
               <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
               </li>
-              <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-              </li>
             </ul>
           </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -498,7 +447,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
          <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton21" data-dropdown-toggle="dropdownClick21" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton21" data-dropdown-toggle="dropdownClick21" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -509,9 +458,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -520,7 +466,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton23" data-dropdown-toggle="dropdownClick23" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton23" data-dropdown-toggle="dropdownClick23" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -531,9 +477,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -542,7 +485,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton24" data-dropdown-toggle="dropdownClick24" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5"type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton24" data-dropdown-toggle="dropdownClick24" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5"type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -553,9 +496,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
@@ -564,7 +504,7 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <!-- Dropdown menu button -->
           <!--Change ID for dropdownClickButton, dropdownClick and and dropdown-toggle-->
-          <button id="dropdownClickButton25" data-dropdown-toggle="dropdownClick25" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdownClickButton25" data-dropdown-toggle="dropdownClick25" data-dropdown-trigger="click" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 ml-5" type="button">Info...<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
           </svg>
         </button>
@@ -575,9 +515,6 @@
               <a href="#" class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Species: </a>
             </li>
             <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Weight: 
-            </li>
-            <li class="block px-4 py-2 hover:bg-green-100 dark:hover:bg-green-600 dark:hover:text-white">Date: 
-            </li>
           </ul>
         </div>
           <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="">
