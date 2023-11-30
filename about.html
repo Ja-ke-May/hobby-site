@@ -42,7 +42,33 @@
   </nav>
 </header>
 <main>
-
+  <div class="flex justify-center items-center m-10">
+    <!-- Picture -->
+    <div class="rounded-full overflow-hidden max-w-screen-sm mr-10 border-4 border-black transition-transform transform hover:scale-110">
+      <img src="profile-img.jpg" alt="Picture of Jacob May" class="w-full h-full object-cover max-w-full">
+  </div>
+    <!-- Text box -->
+    <div class="bg-black bg-opacity-80 p-5 max-w-md ml-5 border-4 border-black rounded">
+        <p class="text-white  text-opacity-80">
+            Hey, I'm Jake. I've loved fishing since my dad introduced me to it as a kid. It's more than just a hobby; it's a lifelong connection to nature and great memories. Check out my Fishing Chronicles—a photo journey of my passion for fishing. Each pic has a story of patience, triumph, and the calm by the water. Hope you enjoy these snapshots as much as I do. Tight lines!
+        </p>
+    </div>
+</div>
+<!--Contact form-->
+<div class="bg-black bg-opacity-80 p-5 max-w-md mx-auto border-4 border-black rounded">
+  <div class="bg-black bg-opacity-80 p-5">
+    <form action="" method="">
+      <label for="contact-form" class="block text-center mb-2 text-white  text-opacity-80">Contact Form</label>
+      <input type="text" id="contact-name" placeholder="Name" class="block w-full mb-2 p-2" required>
+      <input type="email" id="contact-email" placeholder="Email" class="block w-full mb-2 p-2" required>
+      <textarea id="contact-message" placeholder="Your message here..." class="block w-full mb-2 p-2 h-32" maxlength="255"></textarea>
+      <!--Submit button-->
+      <div class="flex justify-center items-center">
+        <button type="submit" class="text-white bg-green-700 bg-opacity-80 focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-opacity-80 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-green-600 dark:bg-opacity-80 dark:focus:ring-green-800 dark:focus:ring-opacity-80 mx-1 my-1.5 justify-center">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
 </main>
 <!--FOOTER--> 
 <footer class="bg-black bg-opacity-80 text-white text-opacity-80 text-center p-5 w-full relative mt-5">
